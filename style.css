@@ -1,0 +1,94 @@
+.bg-img {
+  background-image: url(images/pexels-jakub-novacek-924824.jpg);
+  width: 100%;
+  height: 30%;
+  margin-top: 0%;
+}
+
+.img-txt {
+  color: white;
+}
+
+.card:hover {
+  box-shadow: 3px 3px 7px rgba(230, 230, 230, 0.815),
+    -3px -3px 7px rgba(156, 156, 156, 0.815);
+  transition: all 0.3s ease;
+}
+
+.heading {
+  text-align: center;
+}
+
+.footer {
+  background-color: black;
+  text-align: center;
+}
+
+.bt-mar {
+  margin-left: 14rem;
+}
+
+.post-grid {
+  width: 68%;
+}
+
+.container2 {
+  display: flex;
+}
+
+.sp-img {
+  width: 34%;
+  height: auto;
+  margin: 12px 13px;
+  float: right;
+}
+
+.side-bar {
+  display: block;
+  width: 15%;
+}
+
+.sb-arr {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .bt-mar {
+    margin-left: 10.7rem;
+  }
+
+  .mar2 {
+    margin-top: 2%;
+  }
+
+  .post-grid {
+    width: 69%;
+  }
+
+  .side-bar {
+    width: 35%;
+    display: none;
+    transition: all 0.3s ease;
+  }
+
+  .side-bar.open {
+    display: block;
+  }
+
+  .sb-arr {
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 10.5%;
+    -webkit-transition: -webkit-transform 0.5s;
+    -webkit-transform: rotate(270deg) translateZ(0);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .sb-arr.open {
+    top: 10.5%;
+    left: 30%;
+    /* transition: all 0.3s ease; */
+  }
+}
